@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Hacer la compra semanal",
+    "descripcion": "Ir al supermercado y comprar alimentos básicos para la semana.",
+    "fecha_creacion": "2025-11-24",
+    "fecha_limite": "2025-11-26"
+  },
+  {
+    "titulo": "Limpiar la casa",
+    "descripcion": "Realizar limpieza general: barrer, fregar, quitar el polvo y ordenar habitaciones.",
+    "fecha_creacion": "2025-11-24",
+    "fecha_limite": "2025-11-27"
+  },
+  {
+    "titulo": "Preparar presentación de clase",
+    "descripcion": "Crear diapositivas y repasar el contenido para la exposición del viernes.",
+    "fecha_creacion": "2025-11-24",
+    "fecha_limite": "2025-11-29"
+  },
+  {
+    "titulo": "Llamar al médico",
+    "descripcion": "Pedir cita para una revisión rutinaria.",
+    "fecha_creacion": "2025-11-24",
+    "fecha_limite": "2025-11-25"
+  },
+  {
+    "titulo": "Sacar a pasear al perro",
+    "descripcion": "Dar un paseo de al menos 30 minutos por el parque.",
+    "fecha_creacion": "2025-11-24",
+    "fecha_limite": "2025-11-24"
+  }
+]

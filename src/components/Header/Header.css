@@ -1,0 +1,22 @@
+:root {
+  --beige: #f7f6f3;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-color: var(--beige);
+  align-items: center; 
+  justify-content: center; 
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
