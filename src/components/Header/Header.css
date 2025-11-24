@@ -1,22 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
-  --beige: #f7f6f3;
+  --negro: #0a0a0a;
+  --naranja: #ffbc03;
+  --rosa:#f2b1d7;
+  --verde:#d0ea56;
+  --blanco: #ffffff;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 600;
+  --font-bold: 900;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
-
 
 header {
-  display: flex;
-  height: 200px;
-  width: 100%;
-  background-color: var(--beige);
-  align-items: center; 
-  justify-content: center; 
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  color:var(--rosa);
+  margin-top: 80px;
 }
 
 h1 {
-  font-size: 50px;
-  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin:40px;
+  margin-bottom: 16px;
+  font-weight: var(--font-medium);
+  font-size: 70px;
 }
+
+header p {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px;
+  font-weight: var(--font-light);
+  font-size: 20px;
+}
+

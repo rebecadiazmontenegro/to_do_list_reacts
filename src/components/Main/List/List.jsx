@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import Card from "./Card";
 import Tareas from "../../../tareas.json";
+import './List.css'
 
 const List = () => {
   const tareas = Tareas;
@@ -49,64 +50,65 @@ const List = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="titulo">Título</label>
-        <br />
-        <input
-          type="text"
-          name="titulo"
-          value={values.titulo}
-          onChange={handleChange}
-          required
-        />
-        <br />
+    <article className="lista">
+      <form className="formulario" onSubmit={handleSubmit}>
+        <div className="titulo_descripcion">
+          <label htmlFor="titulo">Título</label>
+          <br />
+          <input
+            type="text"
+            name="titulo"
+            value={values.titulo}
+            onChange={handleChange}
+            required
+          />
+          <br />
 
-        <label htmlFor="descripcion">Descripción</label>
-        <br />
-        <input
-          type="text"
-          name="descripcion"
-          value={values.descripcion}
-          onChange={handleChange}
-          required
-        />
-        <br />
-
-        <label htmlFor="fecha_creacion">Fecha de creación</label>
-        <br />
-        <input
-          type="date"
-          name="fecha_creacion"
-          value={values.fecha_creacion}
-          onChange={handleChange}
-          required
-        />
-        <br />
-
-        <label htmlFor="fecha_limite">Fecha límite</label>
-        <br />
-        <input
-          type="date"
-          name="fecha_limite"
-          value={values.fecha_limite}
-          onChange={handleChange}
-          required
-        />
-        <br />
-        {values.titulo &&
-        values.descripcion &&
-        values.fecha_creacion &&
-        values.fecha_limite ? (
-          <button type="submit">Añadir tarea</button>
-        ) : (
-          <p>"Completa los campos"</p>
-        )}
+          <label htmlFor="descripcion">Descripción</label>
+          <br />
+          <input
+            type="text"
+            name="descripcion"
+            value={values.descripcion}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="formFechas">
+          <label htmlFor="fecha_creacion">Fecha de creación</label>
+          <input
+            type="date"
+            name="fecha_creacion"
+            value={values.fecha_creacion}
+            onChange={handleChange}
+            required
+          />
+          <label htmlFor="fecha_limite">Fecha límite</label>
+          <input
+            type="date"
+            name="fecha_limite"
+            value={values.fecha_limite}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          {values.titulo &&
+          values.descripcion &&
+          values.fecha_creacion &&
+          values.fecha_limite ? (
+            <button type="submit">Añadir tarea</button>
+          ) : (
+            <p> Completa los campos</p>
+          )}
+        </div>
       </form>
-      <button onClick={removeList}>Borrar lista</button>
-      <button onClick={resetTareas}>Resetear lista</button>
-      {paintData()}
-    </div>
+      <div className="botonesLista">
+        <button className="removeList" onClick={removeList}>Borrar lista</button>
+        <button className="resetTareas" onClick={resetTareas}>Resetear lista</button>
+     </div>
+        {paintData()}
+    </article>
   );
 };
 

@@ -6,13 +6,20 @@ const Card = ({ data, remove }) => {
   const { titulo, descripcion, fecha_creacion, fecha_limite } = data;
 
   return (
-    <div>
+    <article className="infoTarea">
       <h4>{titulo || "--"}</h4>
+      <h5>Descripción</h5>
       <p>{descripcion || "--"}</p>
-      <p>{fecha_creacion || "--"}</p>
-      <p>{fecha_limite || "--"}</p>
-      <button onClick={remove}>Borrar tarea</button>
-    </div>
+      <div className="infoFechas">
+        <h5>Fecha de creación:</h5>
+        <br/>
+        <p>{fecha_creacion || "--"}</p>
+        <h5>Fecha límite:</h5>
+        <br/>
+        <p>{fecha_limite || "--"}</p>
+      </div>
+      <button className="removeBoton" onClick={remove}>Borrar tarea</button>
+    </article>
   );
 };
 
