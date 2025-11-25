@@ -136,7 +136,7 @@ const List = () => {
             required
           />
         </div>
-        <div>
+        <div className="addNuevaTarea">
           {values.titulo &&
           values.descripcion &&
           values.fecha_creacion &&
@@ -145,7 +145,7 @@ const List = () => {
               Añadir tarea
             </button>
           ) : (
-            <p> Completa los campos</p>
+            <p> *Completa los campos</p>
           )}
         </div>
       </form>

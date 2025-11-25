@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --negro: #0a0a0a;
   --naranja: #ffbc03;
-  --rosa:#f2b1d7;
-  --verde:#d0ea56;
+  --rosa: #f2b1d7;
+  --verde: #d0ea56;
   --blanco: #ffffff;
   --font-light: 300;
   --font-regular: 400;
@@ -12,101 +12,165 @@
 }
 
 h4 {
-    font-size: 30px;
-    font-weight: var(--font-medium);
-    margin: 0px 20px;
-    margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: var(--font-medium);
+  margin: 0px 20px;
+  margin-bottom: 8px;
 }
 
 h5 {
-    font-size: 20px;
-    font-weight: var(--font-medium);
-    margin: 0px 20px;
-    margin-bottom: 0;
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  margin: 0px 20px;
+  margin-bottom: 0;
 }
 
 p {
-    font-size: 18px;
-    font-weight: var(--font-light);
-    margin: 0px 20px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: var(--font-light);
+  margin: 0px 20px;
+  margin-bottom: 10px;
 }
 
 .infoTarea {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    padding: 24px 16px;
-    gap: 12px;
-    border-radius: 24px;
-    margin-bottom: 0px;
-    background-color: var(--rosa);
-    color: var(--negro);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 24px 16px;
+  gap: 12px;
+  border-radius: 24px;
+  margin-bottom: 0px;
+  background-color: var(--rosa);
+  color: var(--negro);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .infoTarea:hover {
-    transform: scale(1.03); 
+  transform: scale(1.03);
 }
 
 .infoFechas {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
 }
 
 .botonesCard {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: 20px;
 }
 
 .removeBoton,
 .editBoton,
 .tacharBoton,
 .guardarBoton,
-.cancelarBoton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    padding: 8px 8px;
-    border-radius: 8px;
-    background-color: var(--negro);
-    border: solid 2px var(--negro);
-    color: var(--blanco);
-    font-size: 14px;
-    transition: background-color 0.3s; 
+.cancelarBoton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 8px 8px;
+  border-radius: 8px;
+  background-color: var(--negro);
+  border: solid 2px var(--negro);
+  color: var(--blanco);
+  font-size: 14px;
+  transition: background-color 0.3s;
 }
 
 .removeBoton:hover,
 .editBoton:hover,
 .tacharBoton:hover {
-    background-color: var(--rosa);
-    border: solid 2px var(--negro);
-    color: var(--negro);
+  background-color: var(--rosa);
+  border: solid 2px var(--negro);
+  color: var(--negro);
 }
 
 .editForm {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    gap: 8px;
-    width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 8px;
+  width: 500px;
 }
 
 .editForm input {
-    display: flex;
-    height: 16px;
-    padding: 8px;
-    border-radius: 8px;
-    
+  display: flex;
+  height: 16px;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .editFormBoton {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  h4 {
+    font-size: 30px;
+    margin: 0 12px 6px 12px;
+  }
+
+  h5 {
+    font-size: 20px;
+    margin: 0 12px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0 12px 8px 12px;
+  }
+
+  .infoTarea {
     display: flex;
+    align-items: self-start;
+    padding: 20px 14px;
+    gap: 10px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 20px;
+  }
+
+  .infoFechas {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .botonesCard {
     flex-direction: row;
-    gap: 16px;
-    margin-top: 8px;
+    gap: 8px;
+    margin-left: 0;
+    margin: 0 12px;
+  }
+
+  .removeBoton,
+  .editBoton,
+  .tacharBoton,
+  .guardarBoton,
+  .cancelarBoton {
+    width: 105px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .editForm {
+    width: 100%;
+    margin: 12px;
+  }
+
+  .editForm input {
+    height: 14px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .editFormBoton {
+    flex-direction: column;
+    gap: 12px;
+  }
 }

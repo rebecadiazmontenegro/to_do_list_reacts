@@ -1,5 +1,9 @@
 # Lista TO-DO con React
 
+![header](./src/assets/header_readme.png)
+
+---
+
 ### ⏳ Flujo de la aplicación:
 
 1. Nada más empezar tendremos un input y un botón. El botón tendrá el texto ADD
@@ -7,6 +11,20 @@
 3. Cuando un item sea añadido, se borrará inmediatamente lo que habíamos escrito en el input.
 4. Se debe hacer una precarga de tareas de un JSON de datos
 El botón de RESET mostrará de nuevo sólo las tareas obtenidas de la precarga de datos
+
+---
+
+## 🚀 Instalación
+```bash
+git clone <tu-repo-url>
+
+cd nombre-del-proyecto
+
+npm install
+
+npm start
+```
+---
 
 ## 📑 Requisitos Fase 1
 | Requisito | Cumplido |
@@ -21,6 +39,8 @@ El botón de RESET mostrará de nuevo sólo las tareas obtenidas de la precarga 
 | Flujo de la aplicación: ADD añade item y limpia input | ✅ |
 | Precarga de tareas desde JSON | ✅ |
 
+---
+
 ## 📑 Requisitos Fase 2
 | Requisito | Cumplido |
 |-----------|----------|
@@ -31,9 +51,27 @@ El botón de RESET mostrará de nuevo sólo las tareas obtenidas de la precarga 
 | Mensaje "tarea añadida" durante 5 segundos | ✅ |
 | Validación: mínimo 6 caracteres en título | ✅ |
 
+---
+
 ## 📑 Requisitos Fase 3
 | Requisito | Cumplido |
 |-----------|----------|
 | Editar tarea con formulario prellenado | ✅ |
 | Marcar tareas como completadas (tachar) | ✅ |
 | Eliminar tareas | ✅ |
+
+---
+
+![header](./src/assets/mock-up.png)
+
+## 🔧 Tecnologías utilizadas
+
+- React
+- CSS 
+- Hooks: useState, useEffect
+- JSON para datos precargados
+
+## 👩🏼‍💻 Participantes
+
+- Rebeca Díaz-Montenegro Sánchez
+    - Linkdin: https://www.linkedin.com/in/rebeca-diaz-montenegro-s%C3%A1nchez-818515245/

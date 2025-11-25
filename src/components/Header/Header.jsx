@@ -4,12 +4,11 @@ import './Header.css'
 const Header = () => {
   return <header>
     <h1>
-      No dejes para mañana
-      <br/>
-      lo que puedas hacer hoy
+      No dejes para <span className="big">mañana</span> 
+      lo que puedas hacer <span className="big">hoy</span>
     </h1>
     <p>
-      La página perfecta para guardas tus tareas
+      ... pero si lo dejas, ¡apúntalo aquí! 
     </p>
     </header>;
 };
