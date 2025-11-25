@@ -16,7 +16,7 @@ El botón de RESET mostrará de nuevo sólo las tareas obtenidas de la precarga 
 
 ## 🚀 Instalación
 ```bash
-git clone <tu-repo-url>
+git clone 
 
 cd nombre-del-proyecto
 
