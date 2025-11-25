@@ -70,7 +70,8 @@ p {
 }
 
 .removeList,
-.resetTareas{
+.resetTareas,
+.addTareaBoton{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,4 +85,16 @@ p {
     font-size: 16px;
     font-weight: var(--font-medium);
     transition: background-color 0.3s; 
+}
+
+.mensajeAddTarea,
+.mensajeAddError {
+  display: flex;
+  background-color: var(--verde);
+  color: var(--negro);
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: var(--font-light);
+
 }
