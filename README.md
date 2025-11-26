@@ -71,7 +71,15 @@ npm start
 - Hooks: useState, useEffect
 - JSON para datos precargados
 
+## 🖥️ Despliegue en 
+```url
+https://visionary-choux-4dd520.netlify.app/
+```
+
 ## 👩🏼‍💻 Participantes
 
 - Rebeca Díaz-Montenegro Sánchez
-    - Linkdin: https://www.linkedin.com/in/rebeca-diaz-montenegro-s%C3%A1nchez-818515245/
+Linkdin: 
+```url
+https://www.linkedin.com/in/rebeca-diaz-montenegro-s%C3%A1nchez-818515245/+
+```
